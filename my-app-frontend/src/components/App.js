@@ -1,9 +1,10 @@
 import React from "react";
-import VintagePage from "./VintagePage";
+
 import {Route, Switch} from 'react-router-dom'
 import NavBar from './Navbar';
 import Homepage from './Homepage';
-// import Sell from './Sell';
+import Sell from './Sell';
+import Buy from './Buy';
 
 
 const MY_URL= 'http://localhost:9292/items'
@@ -17,14 +18,14 @@ function App() {
       <Switch>
         <Route exact path = '/'>
           <Homepage url = {MY_URL}/>
-          <VintagePage />
+          
         </Route>
         <Route path = '/Sell'>
-          {/* <Sell/> */}
+          <Sell/>
         </Route>
-        {/* <Route path ='/Buy'>
-          <Buy/>
-          </Route> */}
+        <Route path ='/Buy/:id'>
+          <Buy />
+          </Route>
 
       
       
