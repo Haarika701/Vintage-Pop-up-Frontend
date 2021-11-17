@@ -1,0 +1,1 @@
+import VintageCard from "./VintageCard";
