@@ -76,3 +76,36 @@ img{
     display: block;
     font-size: 10px;
   }
+
+ 
+
+  .new-vintage-form{background-image: url("");
+    border: 5px outset #0c0c0a; ;
+    color: purple;
+    text-align: center;
+    flex-wrap: center;
+    padding: 7px 0px;
+    margin: auto;
+    word-break: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    margin-left: 15px;
+    border: 5px outset #050503; ;
+    border-radius: 10px;
+    
+
+  }
+
+  input[type=text], select {
+    width: 75%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ 
