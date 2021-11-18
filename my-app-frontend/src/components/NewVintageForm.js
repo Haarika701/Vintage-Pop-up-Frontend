@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 
 
+
+
+import './index.css';
+
 // name, price, product_despcription, imgUrl, user_id, id
 
   function NewVintageForm({setVintage}) {

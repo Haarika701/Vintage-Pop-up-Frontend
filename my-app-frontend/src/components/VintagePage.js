@@ -1,6 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import VintageList from  './VintageList';
 // import NewVintageForm from './NewVintageForm'
+import './index.css';
 
 const MY_URL= 'http://localhost:9292/items'
 
