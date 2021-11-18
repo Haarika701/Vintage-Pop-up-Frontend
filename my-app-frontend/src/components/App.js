@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       
-      <h1>"Overpriced Vintage Items"</h1>
+      <h1>Overpriced Vintage Shop</h1>
       <NavBar/>
       <Switch>
         <Route exact path = '/'>
