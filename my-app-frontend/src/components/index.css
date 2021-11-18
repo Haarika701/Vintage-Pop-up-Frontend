@@ -65,6 +65,14 @@ img{
     border: 5px outset #050503; ;
     border-radius: 10px;
 }
-.button{
-    justify-content: ;
-}
+.button {
+    background-color: red; /* Green */
+    width: 50%;
+    margin-left:25%;
+    margin-right:25%;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: block;
+    font-size: 10px;
+  }
