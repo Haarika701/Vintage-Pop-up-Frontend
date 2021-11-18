@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 
-function VintageCard({vintage: {name, price, product_description, imgUrl, user_id, id}, vintage}){
+function VintageCard2({vintage: {name, price, product_description, imgUrl, user_id, id}, vintage}){
     const [showBuy, setShowBuy]=useState(false)
     function handleClick(){
         setShowBuy((currentShowBuy)=> !currentShowBuy)
@@ -21,4 +21,4 @@ function VintageCard({vintage: {name, price, product_description, imgUrl, user_i
         </div>
     )
 }
-export default VintageCard
+export default VintageCard2

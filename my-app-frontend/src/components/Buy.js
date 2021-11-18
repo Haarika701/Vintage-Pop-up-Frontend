@@ -1,10 +1,11 @@
 import React, { useState, useEffect} from 'react';
-import VintageCard from  './VintageCard';
+import VintageCard2 from  './VintageCard2';
 import { useParams } from 'react-router-dom';
 // import NewVintageForm from './NewVintageForm'
 
 const MY_URL= `http://localhost:9292/items/`
 
+   
 
 function VintagePage(){
     const [vintage, setVintage] = useState([])
@@ -16,18 +17,25 @@ function VintagePage(){
         .then(resp => resp.json())
         .then(allVintage => setVintage(allVintage))
     }
-    // function intoArray(){
-    //     Object.values(id)
-    // }
+    
+    function handleDeleteClick(e){
+        fetch(`http://localhost:9292/items/${id}`,{
+        method: 'DELETE',
+          })
+          .then(resp=> resp.json())
+            .then((deletedItem)=>console.log(deletedItem))
+
+    } 
+      
     return (
         <main>
             
-            <VintageCard vintage = {vintage} />
+            <VintageCard2 vintage = {vintage} />
            
-        <button className="primary">Purchase</button>
+        <button className="purchaseItem" onClick={handleDeleteClick}>Purchase</button>
 
-            <div>Hello World</div>
+            
         </main>
     )
-}
+    }
 export default VintagePage

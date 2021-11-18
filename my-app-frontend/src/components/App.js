@@ -1,5 +1,4 @@
 import React from "react";
-
 import {Route, Switch} from 'react-router-dom'
 import NavBar from './Navbar';
 import Homepage from './Homepage';
@@ -21,7 +20,7 @@ function App() {
           
         </Route>
         <Route path = '/Sell'>
-          <Sell/>
+          <Sell url = {MY_URL} key= {"New Form"}/>
         </Route>
         <Route path ='/Buy/:id'>
           <Buy />

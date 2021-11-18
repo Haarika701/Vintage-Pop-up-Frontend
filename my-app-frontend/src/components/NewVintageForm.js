@@ -4,7 +4,7 @@ import React, {useState} from "react";
 const initialvalue= {
     name: '',
     price: '',
-    product_despcription: '',
+    product_description: '',
     imgUrl: '',
     user_id: '',
     
@@ -39,9 +39,9 @@ const initialvalue= {
               <form className="apple" onSubmit={handleSubmit}>
                   <input className="name" type='text' name='name' placeholder='Product Name' value={NewVintage.name} onChange={handleChange}/>
                   <input className="price" type='text' name='price' placeholder='Price' value={NewVintage.price} onChange={handleChange}/>
-                  <input className="product_despcription" name='product despcription' placeholder='Product despcription' value={NewVintage.product_despcription} onChange={handleChange}/>
-                  <input className="imgUrl" type='text' name='Product Image' placeholder='Product Image' value={NewVintage.imgUrl} onChange={handleChange}/>
-                  <input className="user_id" type='text' name='Username' placeholder='Username' value={NewVintage.user_id} onChange={handleChange}/>
+                  <input className="product_description" type='text' name='product_description' placeholder='Product description' value={NewVintage.product_description} onChange={handleChange}/>
+                  <input className="imgUrl" type='text' name='imgUrl' placeholder='Product Image' value={NewVintage.imgUrl} onChange={handleChange}/>
+                  <input className="user_id" type='text' name='user_id' placeholder='Username' value={NewVintage.user_id} onChange={handleChange}/>
                   <button className="submit" type="submit">Sell Vintage</button>
                   
 
