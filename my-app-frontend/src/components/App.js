@@ -26,13 +26,6 @@ function App() {
         <Route path ='/Buy/:id'>
           <Buy />
           </Route>
-
-      
-      
-      
-      
-      
-      
       </Switch>
       
     </div>
