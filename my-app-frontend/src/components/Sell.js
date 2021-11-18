@@ -5,9 +5,9 @@ import VintagePage from './Buy';
 const MY_URL= 'http://localhost:9292/items/'
 
 function Sell({Url}){
-    
+    const [vintage, setVintage] = useState([])
         useEffect(getVintage, [Url])
-        const [vintage, setVintage] = useState([])
+        
         function getVintage(){
             fetch(MY_URL)
             .then(resp => resp.json())
@@ -15,7 +15,7 @@ function Sell({Url}){
         }
         return (
             <main>
-                <NewVintageForm />
+                <NewVintageForm setVintage={setVintage}/>
                 
                 
             </main>

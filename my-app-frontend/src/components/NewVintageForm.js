@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 
+
 // name, price, product_despcription, imgUrl, user_id, id
+
+  function NewVintageForm({setVintage}) {
 const initialvalue= {
     name: '',
     price: '',
@@ -9,13 +12,12 @@ const initialvalue= {
     user_id: '',
     
   }
-  function NewVintageForm({setVintage}) {
       const [NewVintage, setNewVintage]= useState(initialvalue)
       function handleChange(e){
           setNewVintage((currentNewVintage)=>{
               return{
                   ...currentNewVintage,
-                  [e.target.name]: e.target.value,
+                  [e.target.name]: e.target.value
               }
           })
       }
