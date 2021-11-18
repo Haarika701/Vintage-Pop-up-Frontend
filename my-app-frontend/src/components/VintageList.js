@@ -1,5 +1,6 @@
 import React from 'react';
 import VintageCard from './VintageCard';
+import './index.css';
 
 
 function VintageList({vintage}){

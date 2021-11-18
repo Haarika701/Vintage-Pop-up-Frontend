@@ -1,5 +1,7 @@
 import React from "react"; 
 import { NavLink } from "react-router-dom";
+import './index.css';
+import styled from 'styled-components'
 
 function Navbar(){
     return(
@@ -15,3 +17,4 @@ function Navbar(){
     )
 }
 export default Navbar
+

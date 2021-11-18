@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
+import './index.css';
 
 function VintageCard2({vintage: {name, price, product_description, imgUrl, user_id, id}, vintage}){
     const [showBuy, setShowBuy]=useState(false)
@@ -8,7 +9,7 @@ function VintageCard2({vintage: {name, price, product_description, imgUrl, user_
     }
     console.log(vintage.product_description)
     return (
-        <div >
+        <card class="card">
             
             <div>{showBuy ? null: name}</div>
             <div >{showBuy ? null:price}</div>
@@ -16,9 +17,9 @@ function VintageCard2({vintage: {name, price, product_description, imgUrl, user_
             <img src={imgUrl}/>
             <Link to= {`/Buy/${id}`}>Buy</Link>
             
-            {user_id}
+        
 
-        </div>
+        </card>
     )
 }
 export default VintageCard2
