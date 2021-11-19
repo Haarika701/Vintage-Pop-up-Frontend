@@ -7,7 +7,7 @@ function Navbar(){
     return(
         <div class="navbar">
         <NavLink to ='/'>
-            Homepage
+            Home Page
         </NavLink>
         <br></br>
         <NavLink to = '/Sell'>

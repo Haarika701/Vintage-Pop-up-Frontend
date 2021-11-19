@@ -29,7 +29,6 @@ function VintagePage(){
       
     return (
         <main>
-            
             <VintageCard2 vintage = {vintage} />
         <div> 
         <button className="purchaseItem" onClick={handleDeleteClick}>Purchase</button>

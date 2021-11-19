@@ -9,16 +9,19 @@ function VintageCard2({vintage: {name, price, product_description, imgUrl, user_
     }
     
     return (
-        <card class="secondary">
-            
-            <div>Name:{showBuy ? null: name}</div>
-            <div >{showBuy ? null:price}</div>
-            <div>Description:{showBuy ? null: product_description }</div>
+        <div class="secondary">
             <img src={imgUrl}/>
+            <br></br>
+            <br></br>
+            <div>Name:{showBuy ? null: name}</div>
+            <br></br>
+            <div >Price:${showBuy ? null:price}</div>
+            <br></br>
+            <div>Description:{showBuy ? null: product_description }</div>
             
 
 
-        </card>
+        </div>
     )
 }
 export default VintageCard2
