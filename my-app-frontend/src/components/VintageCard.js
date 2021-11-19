@@ -10,10 +10,11 @@ function VintageCard({vintage: {name, price, product_description, imgUrl, user_i
     return (
         <div class= "card">
              <div >{showBuy ? null: name}</div> 
+             <br></br>
             <div >{showBuy ? price: null}</div>
             <div>{showBuy ? product_description: null }</div>
             <img src={imgUrl}/>
-            
+            <br></br>
             <Link to= {`/Buy/${id}`}class="button">Buy</Link>
             </div>
             
