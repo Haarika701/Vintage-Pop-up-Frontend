@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import VintageCard2 from  './VintageCard2';
 import { useParams } from 'react-router-dom';
 // import NewVintageForm from './NewVintageForm'
-
+import './index.css';
 const MY_URL= `http://localhost:9292/items/`
 
    
@@ -29,11 +29,10 @@ function VintagePage(){
       
     return (
         <main>
-            
             <VintageCard2 vintage = {vintage} />
-           
+        <div> 
         <button className="purchaseItem" onClick={handleDeleteClick}>Purchase</button>
-
+        </div>
             
         </main>
     )

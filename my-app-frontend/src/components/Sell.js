@@ -1,7 +1,7 @@
 import NewVintageForm from './NewVintageForm';
 import React, { useState, useEffect} from 'react';
-
-
+import VintagePage from './Buy';
+import './index.css';
 const MY_URL= 'http://localhost:9292/items/'
 
 function Sell({Url}){

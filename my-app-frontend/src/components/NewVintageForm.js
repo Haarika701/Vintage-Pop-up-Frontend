@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 
 
+
+
+import './index.css';
+
 // name, price, product_despcription, imgUrl, user_id, id
 
   function NewVintageForm({setVintage}) {
@@ -44,6 +48,8 @@ const initialvalue= {
                   <input className="product_description" type='text' name='product_description' placeholder='Product description' value={NewVintage.product_description} onChange={handleChange}/>
                   <input className="imgUrl" type='text' name='imgUrl' placeholder='Product Image' value={NewVintage.imgUrl} onChange={handleChange}/>
                   <input className="user_id" type='text' name='user_id' placeholder='Username' value={NewVintage.user_id} onChange={handleChange}/>
+                  <br></br>
+                  <br></br>
                   <button className="submit" type="submit">Sell Vintage</button>
                   
 
